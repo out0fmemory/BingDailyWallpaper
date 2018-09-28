@@ -4,6 +4,6 @@
 
 
 ##### 说明
- 历史壁纸源自于https://bing.ioliu.cn/， thanks
+ 历史壁纸源自于https://bing.ioliu.cn/ ,thanks!
  
- 历史壁纸获取工具源自于https://github.com/benheart/BingGallery.git，thanks
+ 历史壁纸获取工具源自于https://github.com/benheart/BingGallery.git ,thanks!
