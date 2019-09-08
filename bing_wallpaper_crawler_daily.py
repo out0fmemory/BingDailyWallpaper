@@ -87,7 +87,7 @@ def main():
     # 下载页面并转换成 soup 对象
     soup = parse_page(base_page_url)
     # 获取总页数
-    total_page_num = 1#parse_page_num(soup)
+    total_page_num = 2#parse_page_num(soup)
     for page in xrange(total_page_num):
         print 'Processing page: %s' % (page + 1)
         page_url = base_page_url + '/?p=' + str(page + 1)
