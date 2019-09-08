@@ -125,7 +125,7 @@ def main():
     cnt = 0
     for pic_info in all_pic_infos:
         cnt = cnt + 1
-        if cnt > 5:
+        if cnt > 10:
             break
         pic_info_name = pic_info[2] + '.info'
         downloaded_resolutions = []
