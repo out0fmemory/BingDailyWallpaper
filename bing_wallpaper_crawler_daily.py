@@ -14,7 +14,11 @@ def parse_page(url):
     :param url: 页面 url 链接
     :return: soup 对象
     """
-    page = requests.get(url).content
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+    }
+    page = requests.get(url,headers=headers).content
+    #print page
     return BeautifulSoup(page, 'html.parser')
 
 
@@ -86,8 +90,9 @@ def main():
     all_pic_infos = []
     # 下载页面并转换成 soup 对象
     soup = parse_page(base_page_url)
+    #print soup
     # 获取总页数
-    total_page_num = 2#parse_page_num(soup)
+    total_page_num = 10#parse_page_num(soup)
     for page in xrange(total_page_num):
         print 'Processing page: %s' % (page + 1)
         page_url = base_page_url + '/?p=' + str(page + 1)
