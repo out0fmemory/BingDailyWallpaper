@@ -92,7 +92,7 @@ def main():
     soup = parse_page(base_page_url)
     #print soup
     # 获取总页数
-    total_page_num = 2#parse_page_num(soup)
+    total_page_num = 4#parse_page_num(soup)
     for page in xrange(total_page_num):
         print 'Processing page: %s' % (page + 1)
         page_url = base_page_url + '/?p=' + str(page + 1)
